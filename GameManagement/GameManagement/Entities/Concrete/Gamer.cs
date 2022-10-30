@@ -7,7 +7,7 @@ namespace GameManagement.Entities.Concrete
 {
     public class Gamer : IEntity
     {
-        public int ID { get ; set ; }
+        public string TcNo { get ; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string UserName { get; set; }

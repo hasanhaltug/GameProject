@@ -12,10 +12,13 @@ namespace GameManagement.Business.Concrete
         {
             if(campaing != null)
             {
-                double discount = (campaing.Discount * game.UnitPrice / 100);
+                double discount = (campaing.Discount * game.UnitPrice );
                 game.UnitPrice -= discount;
-                Console.WriteLine("The game name: {0} \n User: {1}",game.GameName,gamer.UserName);
-
+                Console.WriteLine("The game name: {0} \n User: {1} \n UnitPrice: {2}",game.GameName,gamer.UserName,game.UnitPrice);
+            }
+            else
+            {
+                Console.WriteLine("The game name: {0} \n User: {1} \n UnitPrice: {2}",game.GameName,gamer.UserName,game.UnitPrice);
             }
         }
     }

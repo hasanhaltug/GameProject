@@ -3,13 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameManagement.Business.Abstract
+namespace GameManagement.Data.Abstract
 {
-    public interface IGameService
+   public interface IGameData
     {
-        List<Game> GetAll();
         void Add(Game game);
         void Delete(Game game);
         void Update(Game game);
+        List<Game> GetAll();
     }
 }

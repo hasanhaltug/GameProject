@@ -1,4 +1,5 @@
 ﻿using GameManagement.Business.Abstract;
+using GameManagement.Data.Abstract;
 using GameManagement.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,39 +9,31 @@ namespace GameManagement.Business.Concrete
 {
     public class GamerManager : IGamerService
     {
-        IUserValidationService _gamerValidationService;
+        IDataBase _dataBase;
     
-        public GamerManager(IUserValidationService userValidationService)
+        public GamerManager(IDataBase dataBase)
         {
-            _gamerValidationService = userValidationService;
+            _dataBase = dataBase;
         }
+
         public void Add(Gamer gamer)
         {
-            if(_gamerValidationService.CheckUser(gamer))
-            {
-                Console.WriteLine("user added");
-            }
-            else
-            {
-                Console.WriteLine("Don't added");
-            }
+            _dataBase.Add(gamer);
         }
 
         public void Delete(Gamer gamer)
         {
-            Console.WriteLine("User Deleted ");
+            _dataBase.Delete(gamer);
+        }
+
+        public List<Gamer> GetAll()
+        {
+            return _dataBase.GetAll();
         }
 
         public void Update(Gamer gamer)
         {
-            if (true)
-            {
-                Console.WriteLine("User added!");
-            }
-            else
-            {
-                throw new Exception("Not a valid person!!");
-            }
+            _dataBase.Update(gamer);
         }
     }
 }

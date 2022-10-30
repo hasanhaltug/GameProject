@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hasan\\Desktop\\Kodlama.io Ödev\\GameManagement\\GameManagement\\GameManagement\\GameManagement.csproj",
+      "projectUniqueName": "C:\\Users\\hasan\\Desktop\\KODLAB & BTK\\Git Kursu\\GameProject\\GameManagement\\GameManagement\\GameManagement.csproj",
       "projectName": "GameManagement",
-      "projectPath": "C:\\Users\\hasan\\Desktop\\Kodlama.io Ödev\\GameManagement\\GameManagement\\GameManagement\\GameManagement.csproj",
+      "projectPath": "C:\\Users\\hasan\\Desktop\\KODLAB & BTK\\Git Kursu\\GameProject\\GameManagement\\GameManagement\\GameManagement.csproj",
       "packagesPath": "C:\\Users\\hasan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hasan\\Desktop\\Kodlama.io Ödev\\GameManagement\\GameManagement\\GameManagement\\obj\\",
+      "outputPath": "C:\\Users\\hasan\\Desktop\\KODLAB & BTK\\Git Kursu\\GameProject\\GameManagement\\GameManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

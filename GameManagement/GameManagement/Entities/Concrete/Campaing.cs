@@ -7,8 +7,8 @@ namespace GameManagement.Entities.Concrete
 {
     public class Campaing : IEntity
     {
-        public int ID { get; set; }
-        public string name { get; set; }
+        public int CampaingID { get; set; }
+        public string CampaingName { get; set; }
         public double Discount { get; set; }
 
     }
